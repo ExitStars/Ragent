@@ -203,7 +203,7 @@ def ua(islem = None, arg = None):
 
 def ph(islem = None, arg = None):
     if islem == "rp":
-        return proxyliste[randint(0, len(proxyliste))]
+        return proxyliste[randint(0, len(proxyliste)-1)]
     elif islem == "update":
         del proxyliste[:]
         try:
